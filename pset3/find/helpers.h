@@ -1,9 +1,11 @@
+// WRITTEN BY CS50 INSTRUCTORS
+
 /**
  * helpers.h
  *
  * Helper functions for Problem Set 3.
  */
- 
+
 #include <cs50.h>
 
 /**

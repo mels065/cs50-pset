@@ -1,3 +1,4 @@
+// WRITTEN BY CS50 INSTRUCTORS
 /**
  * generate.c
  *
