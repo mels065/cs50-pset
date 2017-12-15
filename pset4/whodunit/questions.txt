@@ -1,0 +1,12 @@
+1.  stdint.h allows the usage of more specific integer widths
+2.  These create integers of particular byte sizes (non-negative if they are unsigned)
+3.  BYTE: 1, DWORD: 4, LONG: 4, WORD: 2
+4.  42 4d
+5.  bfSize: size of file, biSize: size of image
+6.  If biHeight is negative, the image will be top-down if uncompressed
+7.  biBitCount
+8.  A file either might not exist (if reading it), or it might not be able to be written to (if permissions aren't possessed)
+9.  It indicates the number of blocks of bytes to be read in. If it's 1 block, then 1 block of n bytes will be read in.
+10. 0
+11. Sets the offset of a file pointer
+12. The current location of the file pointer
