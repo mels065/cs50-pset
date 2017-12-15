@@ -1,0 +1,4 @@
+0. The dimensions can be between 3 and 9 (both exclusive)
+1. The game board is represented as a 2d array
+2. `void greet(void)`
+3. `void init(void)`, `void draw(void)`, `bool move(int tile)`, and `bool won(void)`
