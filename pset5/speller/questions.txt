@@ -1,0 +1,25 @@
+0.  A word that means, according to Google, "a lung disease caused by inhaling very fine ash and sand and dust"
+1.  It returns the resource usage of a thread
+2.  16
+3.  It makes it easier to test if they are pointing to a null pointer
+4.  We first print to the screen that the following output will be MISSPELLED WORDS. We then initialize index and set to 0 (which
+represents the beginning of a word that will be checked), misspellings to 0, and words (the number of words) to 0. We then initialize a
+word variable to possess a capacity of LENGTH+1 (words can only be this long). We start our for loop off by initializing c (a character)
+and setting it to the very first character in the text file being read (fgetc takes the next character in a file to be read). If c
+ever equals EOF (end of file), then we end the for loop. On each iteration, it gets the next character to be read.
+
+It checks to see if the character is an alphabet character or an apostrophe (as long as the index is greater than 0). If so, it adds the
+character to the index of word, and increments index. Then, if index has gone over the LENGTH, it consumes the remaining characters until
+it reaches the end of the file, or a non-alphabet character is encountered. It then sets index to 0 in preparation for the next word.
+
+Else, if a number character is encountered (number characters aren't allowed), it will consume the remaining characters until a
+non-alphanumeric character is encountered, or the end of the file. The index is set to 0.
+
+If we don't encounter an alphanumeric character and the index is greater than 0, this can only mean we have scanned a full word.
+We set the final index to '\0' to indicate the end of the string and increment the word count. We then check if the word exists in
+the dictionary (also benchmarking the speed of the algorithm), and if it doesn't, we return a bool for indicating that it was
+misspelled. We add the benchmark to the total for the time of check. If the word was misspelled, we print out the word and increment
+the misspelled count. We then set index to 0.
+5.  We need to check each character to make sure it makes a valid word. If we used fscanf, it would take a whole string and validating
+it as a proper string will be more difficult.
+6.  It may possibly make it so the parameter can't be altered in any way
