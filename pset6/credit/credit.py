@@ -21,12 +21,10 @@ def get_credit_card():
 
 def luhn(num):
     total = 0
-    for i in range(len(num)-2, -1, -2):
-        digit = int(num[i]) * 2
+    for digit in [int(num[i]) * 2 for i in range(len(num)-2, -1, -2)]:
         total += (digit // 10) + (digit % 10)
 
-    for i in range(0, len(num), 2):
-        total += int(num[i])
+    total += sum([int(num[i]) for i in range(0, len(num), 2)])
 
     return total % 10 == 0
 
